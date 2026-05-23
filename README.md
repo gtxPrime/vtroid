@@ -134,15 +134,6 @@ The active project `google-services.json` contains Google Cloud and Firebase API
 
 ---
 
-## 📸 Screenshots
-
-*Screenshots showcasing the V-Troid application interfaces:*
-
-| Home Dashboard | Custom Video Player | Web Interceptor | Status Saver |
-| :---: | :---: | :---: | :---: |
-| *[Add Home Screenshot]* | *[Add Player Screenshot]* | *[Add Interception Screenshot]* | *[Add WhatsApp Screenshot]* |
-
----
 
 ## 🤝 Contributing
 
