@@ -131,3 +131,43 @@ The active project `google-services.json` contains Google Cloud and Firebase API
    ```bash
    ./gradlew assembleDebug
    ```
+
+---
+
+## 📸 Screenshots
+
+*Screenshots showcasing the V-Troid application interfaces:*
+
+| Home Dashboard | Custom Video Player | Web Interceptor | Status Saver |
+| :---: | :---: | :---: | :---: |
+| *[Add Home Screenshot]* | *[Add Player Screenshot]* | *[Add Interception Screenshot]* | *[Add WhatsApp Screenshot]* |
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! If you'd like to improve V-Troid, please follow these steps:
+1. **Fork** the repository.
+2. Create a new feature branch (`git checkout -b feature/your-feature`).
+3. Commit your changes (`git commit -m 'Add your feature description'`).
+4. Push to the branch (`git push origin feature/your-feature`).
+5. Open a **Pull Request**.
+
+Please read [docs/SETUP.md](docs/SETUP.md) for more details on the local development setup.
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+## 📈 Star History
+
+<div align="center">
+
+[![Star History Chart](https://api.star-history.com/svg?repos=gtxPrime/vtroid&type=Date)](https://star-history.com/#gtxPrime/vtroid&Date)
+
+</div>
+
