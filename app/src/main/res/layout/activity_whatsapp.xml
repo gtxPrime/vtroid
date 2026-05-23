@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="ContentDescription">
+
+    <RelativeLayout
+        android:id="@+id/fullWhatsApp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000000"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/RLTopLayout"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="@drawable/whatsbg"
+            android:visibility="visible">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imBack"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:padding="5dp"
+                    android:src="@drawable/ic_back" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/LLOpenWhatsapp"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="80dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/rectangle_white"
+                android:padding="30dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/TVTitle"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/circle"
+                    android:padding="1dp"
+                    android:src="@drawable/whatsapp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/TVTitle"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/whatsapp"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:visibility="visible" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/RLTab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/RLTopLayout"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="-10dp"
+            android:background="@drawable/rectangle_white">
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tablayout"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@drawable/tab_selector"
+                app:tabGravity="center"
+                app:tabIndicatorColor="@color/fui_transparent"
+                app:tabIndicatorHeight="0dp"
+                app:tabMode="scrollable"
+                app:tabRippleColor="@color/fui_transparent" />
+        </RelativeLayout>
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/RLTab" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lottieAnim"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginBottom="80dp"
+            app:lottie_autoPlay="true"
+            app:lottie_fileName="loader.json"
+            app:lottie_loop="true"
+            android:layout_below="@+id/RLTab"
+            android:layout_marginTop="10dp" />
+
+    </RelativeLayout>
+
+</layout>

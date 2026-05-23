@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    tools:ignore="SpUsage, ContentDescription">
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:indeterminateTint="#fff" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageView
+        android:id="@+id/backIV"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:padding="10dp"
+        android:src="@drawable/ic_back"
+        app:tint="@color/white" />
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="40dp"
+        android:gravity="center|end"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/downloadIV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/ic_text_bg_pre"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="1dp"
+                android:text="@string/save"
+                android:textColor="@color/main_wa_color"
+                android:textSize="10dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/ic_round_pre"
+                android:padding="15dp"
+                android:src="@drawable/save"
+                app:tint="@color/white" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/shareIV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/ic_text_bg_pre"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="1dp"
+                android:text="@string/share"
+                android:textColor="@color/main_wa_color"
+                android:textSize="10dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/ic_round_pre"
+                android:padding="10dp"
+                android:src="@drawable/share"
+                app:tint="@color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/deleteIV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/ic_text_bg_pre"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="1dp"
+                android:text="@string/delete"
+                android:textColor="@color/main_wa_color"
+                android:textSize="10dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/ic_round_pre"
+                android:padding="10dp"
+                android:src="@drawable/ic_delete"
+                app:tint="@color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/repostIV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/ic_text_bg_pre"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="1dp"
+                android:text="@string/repost"
+                android:textColor="@color/main_wa_color"
+                android:textSize="10dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/ic_round_pre"
+                android:padding="8dp"
+                android:src="@drawable/ic_whatsapp"
+                app:tint="@color/white" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

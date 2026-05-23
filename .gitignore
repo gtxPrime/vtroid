@@ -1,0 +1,37 @@
+# Built artifacts
+/build
+/*/build
+/captures
+
+# IDEs and Editors
+.idea/
+*.iml
+.gradle/
+.kotlin/
+.cxx/
+.externalNativeBuild/
+*.ipr
+*.iws
+
+# User configurations
+/local.properties
+local.properties
+.DS_Store
+
+# Certificates and Secrets
+*.jks
+*.keystore
+*.p12
+
+# Archives
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# Firebase Configuration
+/app/google-services.json
+
+# Release artifacts
+/app/release
+

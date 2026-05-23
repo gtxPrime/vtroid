@@ -1,0 +1,14 @@
+<shortcuts xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut
+        android:shortcutId="videos"
+        android:enabled="true"
+        android:icon="@mipmap/ic_launcher_modified"
+        android:shortcutShortLabel="@string/shortcut_videos"
+        tools:targetApi="n_mr1">
+        <intent
+            android:action="com.gsprime.vtroid.action.SHORTCUT_VIDEOS"
+            android:targetPackage="com.gtxprime.vtroid"
+            android:targetClass="com.gtxprime.vtroid.VideoPlayer.PlayerActivity" />
+    </shortcut>
+</shortcuts>

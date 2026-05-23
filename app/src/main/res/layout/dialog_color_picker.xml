@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="280dp"
+    app:cardBackgroundColor="@color/fui_transparent"
+    app:cardCornerRadius="20dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff">
+
+        <com.madrapps.pikolo.HSLColorPicker
+            android:id="@+id/hslPicker"
+            android:layout_width="220dp"
+            android:layout_height="220dp"
+            android:layout_marginTop="15dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:hue_arc_width="7dp"
+            app:hue_indicator_radius="16dp"
+            app:hue_indicator_stroke_width="2dp"
+            app:hue_start_angle="60"
+            app:hue_stroke_width="2dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:lightness_arc_width="6dp"
+            app:lightness_indicator_radius="14dp"
+            app:lightness_indicator_stroke_width="2dp"
+            app:saturation_arc_width="6dp"
+            app:saturation_indicator_radius="14dp" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/colorPreviewX"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:src="@color/primary"
+            android:layout_marginBottom="35dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/done"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:fontFamily="@font/axiforma"
+            android:gravity="center"
+            android:text="@string/select"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:ignore="SpUsage" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

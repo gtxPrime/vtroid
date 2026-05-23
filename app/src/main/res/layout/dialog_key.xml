@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dp"
+    android:layout_height="130dp"
+    android:layout_gravity="center_horizontal"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="10dp"
+    tools:ignore="SpUsage, HardcodedText, ContentDescription, Autofill,TextFields">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/keyText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            app:layout_constraintEnd_toStartOf="@+id/img"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/corbel"
+            android:text="@string/enter_key"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/keyYes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/tcm"
+            android:text="Ok"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/premiumKey"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="5dp"
+            android:maxLength="9"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/et_white"
+            android:fontFamily="@font/arial"
+            android:hint="000-000-000"
+            android:inputType="number"
+            android:maxLines="1"
+            android:padding="8dp"
+            android:textColor="@color/white"
+            android:textColorHint="#8FFFFFFF"
+            app:layout_constraintEnd_toStartOf="@id/img"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/keyText" />
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginBottom="12dp"
+            android:clickable="false"
+            android:src="@drawable/membership"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

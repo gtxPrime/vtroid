@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/mainHolder"
+    tools:context=".Activities.Settings"
+    android:background="@drawable/bg_gray">
+
+    <androidx.appcompat.widget.Toolbar
+        android:background="#4F000000"
+        android:id="@+id/toolBarX"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:textColor="@color/white"
+            android:fontFamily="@font/open_sans_medium"
+            android:textSize="22dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/settings"
+            tools:ignore="SpUsage" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:id="@+id/changeThemeBtn"
+        app:layout_constraintTop_toBottomOf="@+id/toolBarX"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/themeHeader"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="6dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/open_sans_medium"
+            android:textSize="18dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/change_theme"
+            tools:ignore="SpUsage" />
+
+        <TextView
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/themeHeader"
+            android:layout_marginTop="2dp"
+            android:layout_marginStart="6dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/open_sans_medium"
+            android:textSize="14dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/change_color"
+            tools:ignore="SpUsage" />
+
+        <ImageView
+            android:id="@+id/colorPreview"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@color/black"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginStart="40dp"
+            tools:ignore="ContentDescription" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:id="@+id/playerSettings"
+        app:layout_constraintTop_toBottomOf="@+id/changeThemeBtn"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/settingHeader"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="6dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/open_sans_medium"
+            android:textSize="18dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/player_settings"
+            tools:ignore="SpUsage" />
+
+        <TextView
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/settingHeader"
+            android:layout_marginTop="2dp"
+            android:layout_marginStart="6dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/open_sans_medium"
+            android:textSize="14dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/change_player"
+            tools:ignore="SpUsage" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

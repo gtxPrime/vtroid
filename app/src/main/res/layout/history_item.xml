@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/fui_transparent"
+    tools:ignore="SpUsage, ContentDescription, HardcodedText" >
+
+    <TextView
+        android:id="@+id/row_history_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Medium Text"
+        android:textStyle="bold"
+        android:textSize="12dp"
+        android:layout_margin="4dp"
+        android:textColor="@android:color/white"/>
+
+    <TextView
+        android:id="@+id/row_history_subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/row_history_title"
+        android:text="TextView"
+        android:textColor="@color/white"
+        android:textSize="10dp"
+        android:layout_margin="4dp"/>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_below="@+id/row_history_subtitle"
+        android:background="#636363" />
+
+    <ImageView
+        android:id="@+id/row_history_menu"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_more" />
+
+</RelativeLayout>

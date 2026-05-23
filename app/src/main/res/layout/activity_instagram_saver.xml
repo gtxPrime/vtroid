@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="SpUsage,Autofill,TextFields, ContentDescription,">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black">
+
+        <RelativeLayout
+            android:id="@+id/fullInstagram"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/black"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/RLTopLayout"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:background="@drawable/instabg"
+                android:visibility="visible">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/imBack"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:padding="5dp"
+                        android:src="@drawable/ic_back" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/LLOpenInstagram"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:background="@drawable/rectangle_white"
+                    android:padding="30dp">
+
+                    <ImageView
+                        android:id="@+id/TVTitle"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/circle"
+                        android:padding="0dp"
+                        android:src="@drawable/instagram" />
+
+                    <TextView
+                        android:id="@+id/tvAppName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/TVTitle"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/instagram"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:visibility="visible" />
+
+                    <RelativeLayout
+                        android:id="@+id/RLLoginInstagram"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvAppName"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:id="@+id/tvLoginInstagram"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:fontFamily="@font/open_sans_medium"
+                            android:padding="10dp"
+                            android:text="@string/download_from_private_account"
+                            android:textColor="@color/white"
+                            android:textSize="13dp" />
+
+                        <com.google.android.material.switchmaterial.SwitchMaterial
+                            android:id="@+id/SwitchLogin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toEndOf="@+id/tvLoginInstagram"
+                            android:clickable="false"
+                            android:theme="@style/SCBSwitch"
+                            tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+                    </RelativeLayout>
+
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/lnr_main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/RLTopLayout"
+                android:layout_marginTop="-60dp"
+                android:orientation="vertical"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:paddingBottom="10dp">
+
+                <RelativeLayout
+                    android:id="@+id/RLEdittextLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:background="@drawable/rectangle_white"
+                    android:elevation="40dp"
+                    android:padding="10dp">
+
+                    <EditText
+                        android:id="@+id/et_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:background="@drawable/et_black"
+                        android:hint="@string/paste_link"
+                        android:padding="15dp"
+                        android:singleLine="true"
+                        android:textColor="@color/white"
+                        android:textColorHint="#FFFFFF"
+                        android:textSize="15sp" />
+
+                    <LinearLayout
+                        android:id="@+id/RLDownloadLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/et_text"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:id="@+id/login_btn1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="2dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/et_black"
+                            android:gravity="center"
+                            android:padding="14dp"
+                            android:visibility="gone"
+                            android:text="@string/download"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textSize="14dp" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvViewStories"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="@string/view_stories"
+                        android:textColor="@color/white"
+                        android:textSize="13dp" />
+
+                    <TextView
+                        android:id="@+id/tvLogin"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/et_black"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:text="@string/login"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/RVUserList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    tools:listitem="@layout/holder_user_list" />
+
+                <ProgressBar
+                    android:id="@+id/pr_loading_bar"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:indeterminate="true"
+                    android:indeterminateTint="#FFFF1E1E"
+                    android:visibility="gone" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/RVStories"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    tools:listitem="@layout/holder_whatsapp_item" />
+
+                <TextView
+                    android:id="@+id/warn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:alpha="0.6"
+                    android:fontFamily="@font/open_sans_medium"
+                    android:gravity="center"
+                    android:text="@string/warn_log"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="15dp" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</layout>
